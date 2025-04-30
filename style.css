@@ -1,5 +1,4 @@
 
-
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +12,19 @@ html,body{
     height: 100%;
     
 }
+
+#cursor{
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 50%;
+    position: fixed;
+    border: 2px solid #e8e7e7;
+    z-index: 999;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+}
+
+/*Cursor completed*/
 
 #loader{
     height: 100vh;
@@ -100,14 +112,7 @@ html,body{
 }
 
 
-
-
-
-
-
-
-
-
+/*Loader completed*/
 
 #main{
     position: relative;
@@ -118,4 +123,67 @@ html,body{
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 7.3vw;
+}
+
+#nav #nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+#nav2 h4{
+    font-weight: 400;
+    font-size: 1vw;
+}
+
+.page1-body{
+    height: fit-content;
+    width: 72%;
+    margin-left: 27%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+
+.page1-body:nth-child(2){
+    margin-top:18vh ;
+}
+
+.page1-body h1{
+    font-size: 7.2vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height:7.2vw ;
+}
+
+.page1-body h2{
+    font-size: 7.2vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height:7.2vw ;
+  
+
+}
+.page1-body h3{
+    font-size: 7vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height:7.2vw ;
+    margin-left: 1vw;
+}
+
+.page1-body h2:hover{
+    -webkit-text-stroke: 1px #fff;
+    color:transparent;
+    font-weight: 500;
 }
